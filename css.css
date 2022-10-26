@@ -1,4 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 * {
     margin : 0px;
     padding : 0px;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+}
+
+
+.table {
+    width: 600px;
+    height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left:50%;
+    transform: translateX(-50%);
+    margin-top :100px
+}
+
+.square{
+    border : 1px solid black;
+    width: calc(100%/0);
+    box-sizing: border-box;
+}
+
+#inputNumber {
+    border: #ca5352 2px solid;
+    border-radius: 8px;
+    padding : 0.5em;
+    width: 200px;
+}
+
+#buttonNumber, #reload {
+    color: white;
+    background-color: #3882F6;
+    border: none;
+    border-radius: 8px;
+    padding :0.5em;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.quantityOfSquare {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin : 40px 0px;
+    gap : 8px;
+}
+
+#reload {
+    display : none;
+    margin-top: 20px;
 }
