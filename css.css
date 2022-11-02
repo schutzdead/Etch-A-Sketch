@@ -11,8 +11,8 @@ main{
     left: 0;
     bottom: 0;
     right: 0;    
-    background-color: rgb(83 83 83);
-    color:white
+    background-color: rgb(158, 158, 158);
+    color:white;
 }
 
 body {
@@ -35,7 +35,7 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap : 40px;
+    gap : 50px;
 }
 
 .etablishTable{
@@ -43,37 +43,6 @@ h1 {
     flex-direction: column;
     align-items: center;
     gap : 13px;
-}
-
-.eraser {
-    color: white;
-    background-color: #3882F6;
-    border: none;
-    border-radius: 6px;
-    padding :0.7em;
-    font-weight: 400;
-    font-size: 16px;
-}
-
-.table {
-    width: 701px;
-    height: 700px;
-    display: flex;
-    flex-wrap: wrap;
-    border: 4px gray solid;
-    border-radius: 4px;
-    background-color: rgb(231, 231, 231);
-}
-
-.widgetColor{
-    width: 200px;
-}
-
-.square{
-    border-top : 1px solid grey;
-    border-right: 1px solid grey;
-    width: calc(100%/0);
-    box-sizing: border-box;
 }
 
 .rules {
@@ -86,10 +55,11 @@ h1 {
     appearance: none;
     outline: none;
     opacity: 0.9;
-    background-color: black;
+    background-color: rgb(27, 27, 27);
     height: 5px;
     border-radius: 10px;
-    width : 200px
+    width : 200px;
+    box-shadow: 0 0 3px black;
 }
 
 #rangeSlider:hover {
@@ -103,4 +73,65 @@ h1 {
     background-color: white;
     cursor: pointer;
     border-radius: 50%;
+    box-shadow: 0 0 3px white;
+}
+
+.clear, .eraser, .start, .border, .rainbow, .brightness, .color{
+    color: white;
+    background-color: rgb(31, 31, 31);
+    border: none;
+    border-radius: 6px;
+    padding :0.7em;
+    font-weight: 600;
+    font-size: 14px;
+    border: 2px solid rgb(31, 31, 31);
+    width: 130px;
+    height: 40px;
+    box-shadow: 0 0 4px black;
+}
+
+button:hover{
+    transform:scale(1.1);
+    transition: transform 0.1s;
+} 
+
+.widgetColor{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap : 40px;
+}
+
+.easy{
+    height: 600%;
+    width: 600%;
+    transform:translate(-50px, -50px);
+    background-color: rgb(0,0,0,0);
+    outline: none;
+}
+
+.color_border {
+    width : 100px;
+    height : 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 0 1rem #313131;
+
+}
+
+.table {
+    width: 700px;
+    height: 700px;
+    display: flex;
+    flex-wrap: wrap;
+    border: 4px gray solid;
+    border-radius: 4px;
+    background-color: rgb(240, 240, 240);
+}
+
+.square{
+    width: calc(100%/0);
+    box-sizing: border-box;
+    user-select: none;
 }
