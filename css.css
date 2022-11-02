@@ -5,60 +5,102 @@
     padding : 0px;
 }
 
+main{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;    
+    background-color: rgb(83 83 83);
+    color:white
+}
+
 body {
     font-family: Roboto, sans-serif;
 }
 
+h1 {
+    text-align: center;
+    margin: 30px 0px;
+}
 
-.table {
-    width: 600px;
-    height: 600px;
+.global{
     display: flex;
-    flex-wrap: wrap;
-    margin-left:50%;
-    transform: translateX(-50%);
-    margin-top :100px;
-    border: 5px solid black;
+    justify-content: center;
+    gap:100px;
+    align-items: center;
 }
 
-.square{
-    border : 1px solid black;
-    width: calc(100%/0);
-    box-sizing: border-box;
-
-}
-
-#inputNumber {
-    border: #ca5352 2px solid;
-    border-radius: 8px;
-    padding : 0.5em;
-    width: 200px;
-}
-
-.rules {
-    font-size: 14px;
-}
-
-#buttonNumber, #reload {
-    color: white;
-    background-color: #3882F6;
-    border: none;
-    border-radius: 8px;
-    padding :0.5em;
-    font-weight: 600;
-    font-size: 14px;
-}
-
-.quantityOfSquare {
+.widgetDefault{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    margin : 40px 0px;
-    gap : 8px;
+    gap : 40px;
 }
 
-#reload {
-    display : none;
-    margin-top: 20px;
+.etablishTable{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap : 13px;
+}
+
+.eraser {
+    color: white;
+    background-color: #3882F6;
+    border: none;
+    border-radius: 6px;
+    padding :0.7em;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.table {
+    width: 701px;
+    height: 700px;
+    display: flex;
+    flex-wrap: wrap;
+    border: 4px gray solid;
+    border-radius: 4px;
+    background-color: rgb(231, 231, 231);
+}
+
+.widgetColor{
+    width: 200px;
+}
+
+.square{
+    border-top : 1px solid grey;
+    border-right: 1px solid grey;
+    width: calc(100%/0);
+    box-sizing: border-box;
+}
+
+.rules {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+
+#rangeSlider {
+    appearance: none;
+    outline: none;
+    opacity: 0.9;
+    background-color: black;
+    height: 5px;
+    border-radius: 10px;
+    width : 200px
+}
+
+#rangeSlider:hover {
+    opacity: 1;
+}
+
+#rangeSlider::-webkit-slider-thumb{
+    appearance: none;
+    width: 17px;
+    height: 17px;
+    background-color: white;
+    cursor: pointer;
+    border-radius: 50%;
 }

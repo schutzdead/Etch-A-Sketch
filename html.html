@@ -9,15 +9,23 @@
     <title>Etch-A-Sketch</title>
 </head>
 <body>
-    <div class="quantityOfSquare">
-        <h1>Etch-A-Sketch</h1>
-        <input id=inputNumber maxlength="2" placeholder="How many square on each line ?" autocomplete="off">
-        <span class="rules"></span>
-        <button id="buttonNumber">Confirm</button>
-        <button id="reload">Launch a new game</button>
+    <main>
+    <h1>Etch-A-Sketch</h1>
+    <div class="global">
+        <div class="widgetDefault">
+            <div class="etablishTable">
+                <span class="rules">20 x 20</span>
+                <input type="range" id="rangeSlider" min="6" max="64" value="20">
+            </div>
+            <button class="eraser">ERASER</button>
+            <span class="reset"></span>
+        </div>
+        <div class="table">
+        </div>
+        <div class="widgetColor">
+            <button id="buttonNumber"></button>
+        </div>
     </div>
-    <div class="table">
-        <!-- <button class="ntm">puhs me</button> -->
-    </div>
+    </main>
 </body>
 </html>
